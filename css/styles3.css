@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    padding: 50px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+article {
+    text-align: left;
+    border: 1px solid #ddd; /* Add a border around each article */
+    border-radius: 5px; /* Add rounded corners to the article */
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+img {
+    margin: 10px; /* Add some space around the images */
+    border-radius: 5px; /* Add rounded corners to the images */
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.comp{
+    display: flex;
+    flex-flow: row wrap; margin-bottom: 10px;
+    }
+    .comp p{
+    flex: 0 0 40%;
+    }
+    .conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px; background-color: grey; border-bottom: 1px ridge grey;
+    }
+    .barre{
+    display: block; height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    }
+    .c85{
+    width: 85%;
+    background-color: rgb(12, 16, 224);
+    }
+    .c90{
+    width: 90%;
+    background-color: rgb(4, 27, 102);
+    }
+    .c95{
+    width: 10%;
+    background-color: rgb(82, 99, 252);
+    }
+    .c100{
+    width: 100%;
+    background-color: rgb(1, 3, 73);
+    border-radius: 5px;
+    }
+    .comp2{
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content : space-between;}
+    .conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em; border-radius: 5px;
+    background-color: grey;}
