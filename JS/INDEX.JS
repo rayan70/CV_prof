@@ -47,8 +47,34 @@
 
             // Change image every 3 seconds (adjust as needed)
             setInterval(changeImage, 3000);
+            slideshowContainer.style.width = "500px";  // Example width
+            slideshowContainer.style.height = "500px"; // Example height
+            
         }
 
         // Call the function to start the image slideshow
         startImageSlideshow();
+    });
+    function animateBars() {
+        var bars = document.querySelectorAll('.barre');
+
+        bars.forEach(function (bar) {
+            var width = bar.style.width;
+            bar.style.width = '0%';  // Reset width to 0%
+            setTimeout(function () {
+                bar.style.width = width;  // Set width back to original value
+            }, 1000);  // Delay for 1000 milliseconds before setting width
+        });
+    }
+
+    // Trigger the animation when the page loads
+    window.addEventListener('load', animateBars);
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
     });
